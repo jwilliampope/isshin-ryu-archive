@@ -1,0 +1,170 @@
+<!--
+Assignment Name: Final Project CMP244 Spring 2022 - Isshin-Ryu Archive Resources page
+Description:  This website, in fulfillment of the Final Project requirements for CMP244-26583 Web Design II (County College of Morris, Spring 2022), is intended to supplement material found at the website of a local martial-arts school located in Northwest New Jersey. I have the pleasure of knowing the owners, who teach a particular style of karate called Isshin-Ryu, which was originated by Tatsuo Shimabuku in the years following World War II on his native island of Okinawa. I intend to provide further information about Shimabuku’s life and philosophy of martial arts.  Additionally, I have incorporated many of the techniques that were learned in this class, as taught by Professor Michael Sidaras-Tiritto.  The user will encounter creative and proper (it is hoped) use of styling, JavaScript, animations, and the like.  
+Student Name: Jack Pope
+Course: CMP244-26583
+Professor: Michael Sidaras-Tirrito
+School: County College of Morris
+Semester: Spring 2022
+Date Modified: 05/01/2022
+Text Editor: Brackets
+Tested Browsers: Chrome, Edge, Firefox
+Validation Engine: https://validator.w3.org/
+Comments: Validator returned a number of errors related to the <META> tags in the <HEAD> section. This page uses JavaScript to generate random quotes from the "Eight Codes of Isshin-Ryu." Every page of this site uses JavaScript to force a year change in the footer. The displayed year will change automatically on January 1.
+-->
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+        <TITLE>Isshin-Ryu Resources</TITLE>
+        <META name="keywords" value="html, css, js, jQuery, web design, web development, karate, Shimabuku, Isshin-Ryu">
+        <META name="description" value="Final Project for CMP244-26583, Web Design II, County College of Morris, Spring 2022, taught by Prof Sidaras-Tiritto. Isshin-Ryu was founded in 1956 by Tatsuo Shimabuku It is a form Okinawan karate which draws from Shorin-ryu, Goju-ryu, and kobudo. Translated, Isshin-Ryu means 'the One-Heart Way.'">            
+        <META name="viewport" content="width=width.device-width, initial-scale=1.0">         
+        <META charset="utf-8">
+        <LINK href="scripts/style.css" rel="Stylesheet" type="text/css" />
+  </HEAD>
+  <BODY>
+        <HEADER id="about">
+          <H1>Isshin-Ryu Resources</H1>
+          <P>
+            Essential Materials for Isshin-Ryu
+          </P>
+          <NAV>
+            <H3><SPAN>Navigation &bull; Hover to Reveal</SPAN></H3>
+            <UL>
+              <LI><A href="index.html">Home</A></LI>
+              <LI><A href="about.html">About</A></LI>
+              <LI><A href="history.html">History</A></LI>
+              <LI class="current"><A href="resources.html">Resources</A></LI>
+              <LI><A href="contact.html">Contact</A></LI>
+            </UL>
+          </NAV>
+        </HEADER>
+
+          <SECTION class="container boxes">
+            <DIV class="flex-columns">
+              <DIV class="item">
+                <H2>Isshin-Ryu Essential Materials</H2>                
+                    <UL class="resource-list">
+                        <LI>Arcenio Advincula. <A href="http://www.isshinkai.net/history07-advincula.html" target="_blank">Isshinkai - Official Website of Arcenio J. Advincula</A></LI>
+                        <P>Advincula began his study of Isshin-Ryu at Agena dojo  under Sensei Shimabuku on December 1, 1958. His historical work on Isshin-Ryu is widely accepted as authoritative and canonical.</P>
+
+                        <LI>Books and Videos </LI>
+                        <UL class="resource-list">
+                            <LI>Angi Uezu. Encyclopedia of Isshin Ryu Karate, 1982. Book.</LI>
+                            <LI>Rising Sun Productions. Isshin Ryu Karate Founder Tatso Shimabuku. DVD.</LI>
+                            <LI>Kim Murray. Complete Okinawa Isshin Ryu Karate System. DVD.</LI>
+                        </UL>
+                        <LI><A href="https://www.awma.com/" target="_blank">AWMA</A> Martial Arts Supplies</LI>
+                    </UL>
+                  <IMG src="images/sparring.jpg" alt="Student sparring with Tatsuo, date unknown." title="Sparring with Tatsuo, date unknown."/>
+                      <H2>Sparring with the Master Himself</H2>
+                      <P>Sparring with Tatsuo, date unknown. It is safe to say that this acolyte (left) surely never forgot his time spent learning from Sensei Shimabuku (right).</P>
+                </DIV>
+
+          <DIV class="item">
+            <H2>Notable Figures</H2>
+            <TABLE cellpadding="5" cellspacing="5">
+              <CAPTION>
+                Table of influential teachers in the Isshin-Ryu Tradition.
+              </CAPTION>
+
+              <THEAD>
+                <TH>First Name</TH>
+                <TH>Last Name</TH>
+                <TH>Style</TH>
+              </THEAD>
+
+              <TR>
+                <TD class="highlight">Tatsuo</TD>
+                <TD class="highlight">Shimabuku</TD>
+                <TD class="highlight">Isshin-Ryu</TD>
+              </TR>
+              <TR>
+                <TD>Chōtoku</TD>
+                <TD>Kyan</TD>
+                <TD>Shorin-ryu</TD>
+              </TR>
+              <TR>
+                <TD>Chōjun</TD>
+                <TD>Miyagi</TD>
+                <TD>Goju-ryu</TD>
+              </TR>
+              <TR>
+                <TD>Chōshin</TD>
+                <TD>Chibana</TD>
+                <TD>Shorin-ryu</TD>
+              </TR>
+              <TR>
+                <TD>Taira</TD>
+                <TD>Shinken</TD>
+                <TD>Ryukyu</TD>
+              </TR>
+              <TR>
+                <TD>Steve</TD>
+                <TD>Armstrong</TD>
+                <TD>Isshin-Ryu</TD>
+              </TR>
+              <TR>
+                <TD>Donald</TD>
+                <TD>Nagle</TD>
+                <TD>Isshin-Ryu</TD>
+              </TR>
+              <TR>
+                <TD>Arcenio</TD>
+                <TD>Advincula</TD>
+                <TD>Isshin-Ryu</TD>
+              </TR>
+              <TFOOT>
+                <TH>First Name</TH>
+                <TH>Last Name</TH>
+                <TH>Style</TH>
+              </TFOOT>
+            </TABLE>
+            <IMG src="images/box5.jpg" alt="Archival image - Shimabuku demonstration on Okinawa courtesy Larry Harding" title="Archival image - Shimabuku demonstration on Okinawa courtesy Larry Harding" />
+          </DIV> 
+          <DIV class="item">        
+            <H2>Spotlight: Steve Armstrong</H2>
+            <IMG id="spotlight-image" src="images/armstrong.jpeg" alt="Steve Armstrong, circa 1960" title="Steve Armstrong, circa 1960 courtesy karatacademyonline.com"/>
+            <P><SPAN class="italics">Seiunchin Kata of Isshinryu Karate</SPAN> by Steve Armstrong. Published in 1976, this classic work by one of Tatsuo's original American students is a must-have for any student of Isshin-Ryu, and martial arts in general. Armstrong clearly describes the Seiunchin Kata with easy-to-read diagrams and clear directions. This is one of four books on the subject by Armstrong &mdash; see more of his works at <A href="https://www.amazon.com/Seiuchin-Isshinryu-Karate-Steve-Armstrong/dp/096143502X/ref=sr_1_3?crid=1NCJDYXZV9JH2&keywords=isshinryu+karate&qid=1650115632&s=books&sprefix=isshin%2Cstripbooks%2C65&sr=1-3" target="_blank"/>Amazon.</A> </P>
+          </DIV>
+          </SECTION>
+
+          <SECTION id="info">
+            <IMG src="images/codes_img.jpg" alt="The Codes of Isshin-Ryu, kenpo gokui kanji" title="The kenpo gokui kanji is 拳法極井"/>
+
+            <div class="card">
+            <div class="codes-container">
+              <h3>Click the button to see a random 拳法極井</h3> <br>
+              <button type="button" id="codeBtn">Random Isshin-Ryu Code</button>
+              <blockquote>
+                  <h2 id="code">拳法極井</h2>
+              </blockquote>
+              </div>
+            </div>       
+        </SECTION>
+
+          <SECTION id="card">
+            <DIV class="card-style">
+              <H2>Spirit Of Tatsuo</H2>
+              <P>2 Cranberry Square</P>
+              <P>Byram, NJ 07821</P>
+              <P><A href="mailto:pope.william382@student.ccm.edu">Email</A></P>
+              <P>(973) 349-6522</P>
+              <BR/>
+              <A href="about.html" class="btn">Learn More</A>
+            </DIV>
+            <IMG src="images/alt_logo.jpg" class="logo" alt="animated karate triskelion"/>  
+          </SECTION>
+
+          <FOOTER>
+              <!-- The span id "year" is associated with a JavaScript file (changeDate.js) which will force a copyright year change each January 1.  -->
+              <P>Copyright &#169; <SPAN id="year"></SPAN> Jack Pope</P>
+              <P><A href="mailto:pope.william382@student.ccm.edu">Email: Jack Pope</A></P>
+              <P id="disclaimer">Note: All media included in this project are used in the spirit of Fair Use or with relevant permissions.     This is an educational project. Not intended for commercial use.  
+              </P><BR/>
+          <ADDRESS>Image credits: Jason Briscoe/Unsplash; Thao Le Hoang/Unsplash; Archival images, Larry Harding.</ADDRESS>
+        </FOOTER>      
+        <SCRIPT src="scripts/dateChange.js"></SCRIPT> 
+        <SCRIPT src="scripts/codes.js"></SCRIPT>
+    </BODY>
+</HTML>

@@ -1,0 +1,142 @@
+<!--
+Assignment Name: Final Project CMP244 Spring 2022 - Isshin-Ryu Archive Contact page
+Description:  This website, in fulfillment of the Final Project requirements for CMP244-26583 Web Design II (County College of Morris, Spring 2022), is intended to supplement material found at the website of a local martial-arts school located in Northwest New Jersey. I have the pleasure of knowing the owners, who teach a particular style of karate called Isshin-Ryu, which was originated by Tatsuo Shimabuku in the years following World War II on his native island of Okinawa. I intend to provide further information about Shimabuku’s life and philosophy of martial arts.  Additionally, I have incorporated many of the techniques that were learned in this class, as taught by Professor Michael Sidaras-Tiritto.  The user will encounter creative and proper (it is hoped) use of styling, JavaScript, animations, and the like.  
+Student Name: Jack Pope
+Course: CMP244-26583
+Professor: Michael Sidaras-Tirrito
+School: County College of Morris
+Semester: Spring 2022
+Date Modified: 05/01/2022
+Text Editor: Brackets
+Tested Browsers: Chrome, Edge, Firefox
+Validation Engine: https://validator.w3.org/
+Comments: Validator returned a number of errors related to the <META> tags in the <HEAD> section. This page uses JavaScript to collect information from the user to (ostensibly) sign them up for a newsletter. A message is displayed back to the user that their information has been received. The newsletter is fictitious, and no data is actually sent. Every page of this site uses JavaScript to force a year change in the footer. The displayed year will change automatically on January 1.
+-->
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+        <TITLE>Contact Isshin-Ryu Archive</TITLE>
+        <META name="keywords" value="html, css, js, jQuery, web design, web development, karate, Shimabuku, Isshin-Ryu">
+        <META name="description" value="Final Project for CMP244-26583, Web Design II, County College of Morris, Spring 2022, taught by Prof Sidaras-Tiritto. Isshin-Ryu was founded in 1956 by Tatsuo Shimabuku It is a form Okinawan karate which draws from Shorin-ryu, Goju-ryu, and kobudo. Translated, Isshin-Ryu means 'the One-Heart Way.'">            
+        <META name="viewport" content="width=width.device-width, initial-scale=1.0">         
+        <META charset="utf-8">
+        <LINK href="scripts/style.css" rel="Stylesheet" type="text/css" />
+  </HEAD>
+
+   <BODY>
+        <HEADER id="home">
+          <H1>Isshin-Ryu Archive &bull; Contact Us</H1>
+          <P>
+            "The Ear Must Listen In All Directions"
+          </P>
+          <NAV>
+            <H3><SPAN>Navigation &bull; Hover to Reveal</SPAN></H3>
+            <UL>
+              <LI><A href="index.html">Home</A></LI>
+              <LI><A href="about.html">About</A></LI>
+              <LI><A href="history.html">History</A></LI>
+              <LI><A href="resources.html">Resources</A></LI>
+              <LI class="current"><A href="contact.html">Contact</A></LI>
+            </UL>
+          </NAV>
+        </HEADER>
+
+        <MAIN id="feedback-form">      
+          <DIV class="form-container">         
+            <ARTICLE class="form-style">
+              <H2>The Time To Strike...</H2>
+              <P>Whether you are an absolute beginner or have mastered the practice, we are here to encourage you on your journey. Please fill out this form to let us know about your interests, skill level, and to share your thoughts with us as we travel together on the "One-Hearted Way"!</P>
+                <IMG src="images/kanji-heart.png">
+            </ARTICLE>
+            <ARTICLE class="form-style">
+              <FORM action="mailto:mtirrito@ccm.edu" method="post" enctype="text/plain" autocomplete="on">
+                <LABEL for="fname">First Name</LABEL>
+                <INPUT type="text" name="fname" class="fname" placeholder="Your first name..." required />
+                <LABEL for="lname">Last Name</LABEL>
+                <INPUT type="text" name="lname" class="lname" placeholder="Your last name..." required />
+                <LABEL for="email">Email:</LABEL>
+                <INPUT type="email" id="emailAddress" placeholder="Enter your email address..." required />
+                <LABEL for="skill">Skill Level:</LABEL>
+                <INPUT list="skill" name="skills" id="skills" placeholder="Click to choose a skill level..." required />
+
+                <DATALIST id="skill">
+                  <OPTION value="No Experience">No Experience</OPTION>
+                  <OPTION value="Beginner">Beginner</OPTION>
+                  <OPTION value="Novice">Novice</OPTION>
+                  <OPTION value="Intermediate">Intermediate</OPTION>
+                  <OPTION value="Advanced">Advanced</OPTION>
+                  <OPTION value="Expert">Expert</OPTION>
+                  <OPTION value="Professional">Professional</OPTION>
+                  <OPTION value="Other">Other</OPTION>
+                </DATALIST>
+                <LABEL for="comments">Your Comments:</LABEL>
+                <TEXTAREA rows="5" cols="40" placeholder="Enter comments here..." required></TEXTAREA>
+                <FIELDSET>
+                  <INPUT type="submit" />
+                  <INPUT type="reset" />
+                </FIELDSET>
+              </FORM>
+            </ARTICLE>
+
+            <ARTICLE class="form-style">
+              <H2>...Is Now!</H2>
+              <P>Thank you for your interest in Isshin-Ryu. Feel free to use this form any time to ask questions and provide feedback. We appreciate suggestions on how we can better serve this community. As the Eighth Code of Isshin-Ryu reminds us, "The ear must listen in all directions," so we strive to listen and learn!</P>
+                <IMG src="images/kanji-listen.jpg" alt="kanji character for Listen - courtesy zazzle.com">
+            </ARTICLE>
+          </DIV>
+        </MAIN>
+
+        <SECTION id="rfma">
+          <ASIDE>
+          <DIV class="card">
+            <H2>Subscribe to our Newsletter</H2>        
+              <DIV id="mainContent" class="main-content">
+                <P>Sign Up Here!</P>
+                <FORM id="emailCollector" class="email-collector" action="#" method="POST">
+                  <INPUT name="firstName" type="text" placeholder="First Name..." required/>
+                  <INPUT email="emailAddress" type="email" placeholder="Email Address..." required/>
+                  <BUTTON class="btn btn-primary" type="submit">Subscribe</BUTTON>
+                </FORM>
+                <P class="fine-print">We'll never share your information without your permission</P>
+              </DIV>
+              </DIV>
+            </ASIDE>      
+          <IMG src="images/alt_logo.jpg" class="logo" alt="rfma logo" />
+        </SECTION>
+
+        <FOOTER>
+            <!-- The span id "year" is associated with a JavaScript file (changeDate.js) which will force a copyright year change each January 1.  -->
+          <P>Copyright &#169; <span id="year"></span> Jack Pope</P>
+          <P><A href="mailto:pope.william382@student.ccm.edu">Email: Jack Pope</A></P>
+          <P id="disclaimer">Note: All media included in this project are used in the spirit of Fair Use or with relevant permissions. This is an educational project. Not intended for commercial use. </P><BR/>
+          <ADDRESS>Image credits: Jason Briscoe/Unsplash; Thao Le Hoang/Unsplash; Archival images, Larry Harding.</ADDRESS>
+        </FOOTER>
+        <SCRIPT src="scripts/emailCollector.js"></SCRIPT>
+        <SCRIPT src="scripts/dateChange.js"></SCRIPT>       
+    </BODY>
+</HTML>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       

@@ -1,0 +1,96 @@
+<!--
+Assignment Name: Final Project CMP244 Spring 2022 - Isshin-Ryu Archive About page
+Description:  This website, in fulfillment of the Final Project requirements for CMP244-26583 Web Design II (County College of Morris, Spring 2022), is intended to supplement material found at the website of a local martial-arts school located in Northwest New Jersey. I have the pleasure of knowing the owners, who teach a particular style of karate called Isshin-Ryu, which was originated by Tatsuo Shimabuku in the years following World War II on his native island of Okinawa. I intend to provide further information about Shimabuku’s life and philosophy of martial arts.  Additionally, I have incorporated many of the techniques that were learned in this class, as taught by Professor Michael Sidaras-Tiritto.  The user will encounter creative and proper (it is hoped) use of styling, JavaScript, animations, and the like.  
+Student Name: Jack Pope
+Course: CMP244-26583
+Professor: Michael Sidaras-Tirrito
+School: County College of Morris
+Semester: Spring 2022
+Date Modified: 05/05/2022
+Text Editor: Brackets
+Tested Browsers: Chrome, Edge, Firefox
+Validation Engine: https://validator.w3.org/
+Comments: Validator returned a number of errors related to the <META> tags in the <HEAD> section. Every page of this site uses JavaScript to force a year change in the footer. The displayed year will change automatically on January 1.
+-->
+
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+        <TITLE>About Isshin-Ryu Archive</TITLE>
+        <META name="keywords" value="html, css, js, jQuery, web design, web development, karate, Shimabuku, Isshin-Ryu">
+        <META name="description" value="Final Project for CMP244-26583, Web Design II, County College of Morris, Spring 2022, taught by Prof Sidaras-Tiritto. Isshin-Ryu was founded in 1956 by Tatsuo Shimabuku It is a form Okinawan karate which draws from Shorin-ryu, Goju-ryu, and kobudo. Translated, Isshin-Ryu means 'the One-Heart Way.'">            
+        <META name="viewport" content="width=width.device-width, initial-scale=1.0">         
+        <META charset="utf-8">
+        <LINK href="scripts/style.css" rel="Stylesheet" type="text/css">        
+  </HEAD>
+  <BODY>
+        <HEADER id="about">
+          <H1>About Isshin-Ryu</H1>
+          <P>
+            Isshin-Ryu Philosophy and Basics
+          </P>
+          <NAV>
+            <H3><SPAN>Navigation &bull; Hover to Reveal</SPAN></H3>
+            <UL>
+              <LI><A href="index.html">Home</A></LI>
+              <LI class="current"><A href="about.html">About</A></LI>
+              <LI><A href="history.html">History</A></LI>
+              <LI><A href="resources.html">Resources</A></LI>
+              <LI><A href="contact.html">Contact</A></LI>
+            </UL>
+          </NAV>
+        </HEADER>
+
+      <SECTION class="container boxes">
+        <ARTICLE class="box">
+          <IMG src="images/box4.jpg" alt="Archival image - Shimabuku demonstration on Okinawa courtesy Larry Harding" title="Archival image - Shimabuku demonstration on Okinawa courtesy Larry Harding"/>
+          <H2>Isshin-Ryu Basics</H2>
+          <P>Isshin-Ryu draws from the Shorin, Goju, and Kobudo schools. Tatsuo's school (<em>ryu</em>) blended the three into a "whole-hearted" method &mdash; literally "one-heart way."</P>
+          <A href="#index.html">Isshin-Ryu Archive Home</A>
+        </ARTICLE>
+        <ARTICLE class="box">
+          <IMG src="images/box5.jpg" alt="Archival image - Shimabuku demonstration on Okinawa courtesy Larry Harding" title="Archival image - Shimabuku demonstration on Okinawa courtesy Larry Harding"  />
+          <H2>Shimabuku's Methods</H2>
+          <P>Pictured above is Sensei Shimabuku sparring with a student on Okinawa, date unknown. He began teaching U.S. Marines stationed on the island in 1957. </P>        
+          <A href="history.html">Read More</A>
+        </ARTICLE>
+          <ARTICLE class="box">
+          <IMG src="images/box6.jpg" alt="Don Nagle and Howard Long in Elkton, MD, 1993, courtesy David Gabbard/martialartsfortheheart.com" title="Don Nagle and Howard Long in Elkton, MD, 1993, courtesy David Gabbard/martialartsfortheheart.com"/>
+          <H2>Isshin-Ryu in America</H2>
+          <P>Isshin-Ryu was promoted in America by such teachers as Don Nagle and Howard Long. See the Resources page to learn the names of major Isshin-Ryu figures.</P>
+          <A href="#index.html">Resources</A>
+        </ARTICLE>
+      </SECTION>
+
+      <SECTION id="info">
+          <IMG src="images/about_banner.jpg" alt="karate class on the beach, Thao Le Hoang/ unsplash" />
+          <DIV class="card">
+            <H2>Enjoy Your Visit</H2>
+            <P>Thank you for visiting the Isshin-Ryu Archive. As you explore the site, you'll learn facts about Isshin-Ryu (some esoteric and obscure, but always interesting!). If you have any questions or suggestions, or wish to subscribe to our newsletter, please visit the <A href="contact.html">Contact</A> page. </P><BR/>
+            <A href="index.html" class="btn">Archive Home</A>
+          </DIV>
+      </SECTION>
+
+      <SECTION id="card">
+        <DIV class="card-style">
+          <H2>Spirit Of Tatsuo</H2>
+          <P>2 Cranberry Square</P>
+          <P>Byram, NJ 07821</P>
+          <P><A href="mailto:pope.william382@student.ccm.edu">Email</A></P>
+          <P>(973) 349-6522</P>
+          <BR/>
+          <A href="history.html" class="btn">History Page</A>
+        </DIV>
+        <IMG src="images/alt_logo.jpg" class="logo" alt="animated karate triskelion"/>  
+      </SECTION>
+
+      <FOOTER>
+              <!-- The span id "year" is associated with a JavaScript file (changeDate.js) which will force a copyright year change each January 1.  -->
+          <P>Copyright &#169; <SPAN id="year"></SPAN> Jack Pope</P>
+          <P><A href="mailto:pope.william382@student.ccm.edu">Email: Jack Pope</A></P>
+          <P id="disclaimer">Note: All media included in this project are used in the spirit of Fair Use or with relevant permissions. This is an educational project. Not intended for commercial use.  </P><BR/>
+          <ADDRESS>Image credits: Jason Briscoe/Unsplash; Thao Le Hoang/Unsplash; Archival images, Larry Harding.</ADDRESS>
+      </FOOTER>      
+      <SCRIPT src="scripts/dateChange.js"></SCRIPT>
+    </BODY>
+</HTML>

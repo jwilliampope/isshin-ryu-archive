@@ -1,0 +1,98 @@
+<!--
+Assignment Name: Final Project CMP244 Spring 2022 - Isshin-Ryu Archive Home page
+Description:  This website, in fulfillment of the Final Project requirements for CMP244-26583 Web Design II (County College of Morris, Spring 2022), is intended to supplement material found at the website of a local martial-arts school located in Northwest New Jersey. I have the pleasure of knowing the owners, who teach a particular style of karate called Isshin-Ryu, which was originated by Tatsuo Shimabuku in the years following World War II on his native island of Okinawa. I intend to provide further information about Shimabuku’s life and philosophy of martial arts.  Additionally, I have incorporated many of the techniques that were learned in this class, as taught by Professor Michael Sidaras-Tiritto.  The user will encounter creative and proper (it is hoped) use of styling, JavaScript, animations, and the like.  
+Student Name: Jack Pope
+Course: CMP244-26583
+Professor: Michael Sidaras-Tirrito
+School: County College of Morris
+Semester: Spring 2022
+Date Modified: 05/05/2022
+Text Editor: Brackets
+Tested Browsers: Chrome, Edge, Firefox
+Validation Engine: https://validator.w3.org/
+Comments: Validator returned a number of errors related to the <META> tags in the <HEAD> section. This page also includes a jQuery "Easter Egg" - when the user mouseenters the header zone, an alert displays Shimabuku's birth and death dates. Every page of this site uses JavaScript to force a year change in the footer. The displayed year will change automatically on January 1.-->
+
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+        <TITLE>Isshin-Ryu Archive Home</TITLE>
+        <META name="keywords" value="html, css, js, jQuery, web design, web development, karate, Shimabuku, Isshin-Ryu">
+        <META name="description" value="Final Project for CMP244-26583, Web Design II, County College of Morris, Spring 2022, taught by Prof Sidaras-Tiritto. Isshin-Ryu was founded in 1956 by Tatsuo Shimabuku It is a form Okinawan karate which draws from Shorin-ryu, Goju-ryu, and kobudo. Translated, Isshin-Ryu means 'the One-Heart Way.'">            
+        <META name="viewport" content="width=width.device-width, initial-scale=1.0">         
+        <META charset="utf-8">
+        <LINK href="scripts/style.css" rel="Stylesheet" type="text/css">
+        <SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></SCRIPT>
+  </HEAD>
+  <BODY>
+    <HEADER id="home">
+      <H1>Isshin-Ryu Archive</H1>
+      <P>
+        Promoting Isshin-Ryu Karate in Association With <BR/> <SPAN class="brand"><A href="#" target="_blank">Spirit of Tatsuo Martial Arts</A></SPAN>
+      </P>
+      <NAV>
+        <H3><SPAN>Navigation &bull; Hover to Reveal</SPAN></H3>
+        <UL>
+          <LI class="current"><A href="index.html">Home</A></LI>
+          <LI><A href="about.html">About</A></LI>
+          <LI><A href="history.html">History</A></LI>
+          <LI><A href="resources.html">Resources</A></LI>
+          <LI><A href="contact.html">Contact</A></LI>
+        </UL>
+      </NAV>
+    </HEADER>
+      
+      <SECTION class="container boxes">
+        <ARTICLE class="box">
+          <IMG src="images/box1.jpg" alt="karate on the beach at sunset, courtesy Jason Briscoe/Unsplash" title="karate on the beach at sunset, courtesy Jason Briscoe/Unsplash"/>
+          <H2>Inside the Archive</H2>
+          <P>Welcome to our site! Inside you will find essential information, resources, and history related to the practice and philosophy of Isshin-Ryu.</P>
+          <A href="#">Back To Top</A>
+        </ARTICLE>
+        <ARTICLE class="box">
+          <IMG src="images/box2.jpg" alt="Isshin-Ryu standard patch, featuring the River Goddess and her Dragon-Child, courtesy Sensei Morrison, Carlisle Isshinryu Karate Club"  title="Isshin-Ryu standard patch, featuring the River Goddess and her Dragon-Child, courtesy Sensei Morrison, Carlisle Isshinryu Karate Club"/>
+          <H2>Origins</H2>
+          <P>One night, a man dreamt of the River Goddess and her Dragon-Child. Upon awakening, Sensei Tatsuo resolutely set out to promote Isshin-Ryu.</P>
+          <A href="history.html">History of Isshin-Ryu</A>
+        </ARTICLE>
+          <ARTICLE class="box">
+          <IMG src="images/box3.jpg" alt="Karate student demonstrating kata, courtesy Thao Le Hoang/Unsplash" title="Karate student demonstrating kata, courtesy Thao Le Hoang/Unsplash"/>
+          <H2>Essential Resources</H2>
+          <P>Here you can learn about essential gear and resources for the practice of Isshin-Ryu. "The time to strike is when the opportunity presents itself."</P>
+          <A href="resources.html">Resources Page</A>
+        </ARTICLE>
+      </SECTION>
+      
+      <SECTION id="info">
+          <IMG src="images/tatsuo_cleveland.jpg" alt="Tatsuo in Cleveland, circa 1966, courtesy Larry Harding" title="Tatsuo in Cleveland, circa 1966, courtesy Larry Harding"/>
+          <DIV class="card">
+            <H2>Tatsuo Shimabuku &mdash; Founder of Isshin-Ryu</H2>
+            <P>Sensei Shimabuku, the founder of Isshin-Ryu, is an epic figure in the annals of martial arts. His life is at times shrouded in mystery and legend &mdash as befits all great mythic heroes. But let us not spoil his story here. See the History page for a closer look at his life and influence.</P><BR/>
+            <A href="history.html" class="btn">Life of Shimabuku</A>
+          </DIV>
+      </SECTION>
+      
+      <SECTION id="card">
+        <DIV class="card-style">
+          <H2>Spirit Of Tatsuo</H2>
+          <P>2 Cranberry Square</P>
+          <P>Byram, NJ 07821</P>
+          <P><A href="mailto:pope.william382@student.ccm.edu">Email</A></P>
+          <P>(973) 349-6522</P>
+          <BR/>
+          <A href="about.html" class="btn">Learn More</A>
+        </DIV>
+        <IMG src="images/alt_logo.jpg" class="logo" alt="animated karate triskelion"/>  
+      </SECTION>
+      
+      <FOOTER>
+        <!-- The span id "year" is associated with a JavaScript file (changeDate.js) which will force a copyright year change each January 1.  -->
+          <P>Copyright &#169; <SPAN id="year"></SPAN> Jack Pope</P> <BR/>
+          <P><A href="mailto:pope.william382@student.ccm.edu">Email Jack</A></P>
+          <P id="disclaimer">Note: All media included in this project are used in the spirit of Fair Use or with relevant permissions.   This is an educational project. Not intended for commercial use. </P> <BR>
+          <ADDRESS>Image credits: Jason Briscoe/Unsplash; Sensei Morrison, Carlisle Isshin-Ryu Karate Club; Thao Le Hoang/Unsplash; Archival images, Larry Harding.</ADDRESS>
+      </FOOTER>      
+      <SCRIPT src="scripts/dateChange.js"></SCRIPT>
+      <SCRIPT src="scripts/welcome.js"></SCRIPT>
+      <SCRIPT src="scripts/memorial.js"></SCRIPT>    
+</BODY>
+</HTML>

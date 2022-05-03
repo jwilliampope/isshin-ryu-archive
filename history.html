@@ -1,0 +1,95 @@
+<!--
+Assignment Name: Final Project CMP244 Spring 2022 - Isshin-Ryu Archive History page
+Description:  This website, in fulfillment of the Final Project requirements for CMP244-26583 Web Design II (County College of Morris, Spring 2022), is intended to supplement material found at the website of a local martial-arts school located in Northwest New Jersey. I have the pleasure of knowing the owners, who teach a particular style of karate called Isshin-Ryu, which was originated by Tatsuo Shimabuku in the years following World War II on his native island of Okinawa. I intend to provide further information about Shimabuku’s life and philosophy of martial arts.  Additionally, I have incorporated many of the techniques that were learned in this class, as taught by Professor Michael Sidaras-Tiritto.  The user will encounter creative and proper (it is hoped) use of styling, JavaScript, animations, and the like.  
+Student Name: Jack Pope
+Course: CMP244-26583
+Professor: Michael Sidaras-Tirrito
+School: County College of Morris
+Semester: Spring 2022
+Date Modified: 05/01/2022
+Text Editor: Brackets
+Tested Browsers: Chrome, Edge, Firefox
+Validation Engine: https://validator.w3.org/
+Comments: Validator returned a number of errors related to the <META> tags in the <HEAD> section. Every page of this site uses JavaScript to force a year change in the footer. The displayed year will change automatically on January 1.
+-->
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+    <TITLE>History of Isshin-Ryu</TITLE>
+    <META name="keywords" value="html, css, js, jQuery, web design, web development, karate, Shimabuku, Isshin-Ryu">
+    <META name="description" value="Final Project for CMP244-26583, Web Design II, County College of Morris, Spring 2022, taught by Prof Sidaras-Tiritto. Isshin-Ryu was founded in 1956 by Tatsuo Shimabuku It is a form Okinawan karate which draws from Shorin-ryu, Goju-ryu, and kobudo. Translated, Isshin-Ryu means 'the One-Heart Way.'">            
+    <META name="viewport" content="width=width.device-width, initial-scale=1.0">         
+    <META charset="utf-8">
+    <LINK href="scripts/style.css" rel="Stylesheet" type="text/css">        
+  </HEAD>
+  <BODY>
+        <HEADER id="about">
+          <H1>History of Isshin-Ryu</H1>
+          <P>
+            Learn About Isshin-Ryu and Tatsuo Shimabuku
+          </P>
+          <NAV>
+            <H3><SPAN>Navigation &bull; Hover to Reveal</SPAN></H3>
+            <UL>
+              <LI><A href="index.html">Home</A></LI>
+              <LI><A href="about.html">About</A></LI>
+              <LI class="current"><A href="history.html">History</A></LI>
+              <LI><A href="resources.html">Resources</A></LI>
+              <LI><A href="contact.html">Contact</A></LI>
+            </UL>
+          </NAV>
+        </HEADER>
+      
+          <SECTION class="container boxes">
+            <ARTICLE class="box">
+              <IMG src="images/box7.jpg" alt="The official Isshin-Ryu kanji" title="The Isshin-Ryu kanja - literally translated, it  means the 'One-Heart Method'"/>
+              <H2>Shimabuku's Early Life</H2>
+              <P>He was born to a farming family in 1908. Working the farm gave him strength and discipline, which he would employ to good results in his study of Shorin, Goju, and Kobudo karate. </P>
+
+            </ARTICLE>
+            <ARTICLE class="box">
+              <IMG src="images/box8.jpg" alt="Motubu Choki with students, courtesy Larry Harding"  title="Archival image, Motubu Choki with students, courtesy Larry Harding"/>
+              <H2>The Growth of a Legend</H2>
+              <P>Among his teachers was the formidable Motubu Choki (left, giving instruction, early 20th century). Tatsuo became Choki's most famous and respected student. </P>           
+            </ARTICLE>
+
+              <ARTICLE class="box">
+              <IMG src="images/box9.jpg" alt="Teaching students at Kyan, Tatsuo's backyard dojo." title="Archival image, teaching students at Kyan, Tatsuo's backyard dojo, courtesy Larry Harding"/>
+              <H2>The War Years</H2>
+              <P>He was impressed into forced labor by the Japanese during the war, but his spirit remained unbroken. His struggles firmed his resolve to bring a new conception of karate to the world.</P>     
+            </ARTICLE>
+          </SECTION>
+
+          <SECTION id="info">
+              <IMG src="images/history_banner.jpg" alt="Tatsuo with students on Okinawa" title="Archival image, Tatsuo with students on Okinawa, courtesy Larry Harding"/>
+              <DIV class="card">
+                <H2>Isshin-Ryu In America</H2>
+                <P>Tatso Shimabuku came to America in 1964 and 1966.  His demonstrations were legendary, particularly the Cleveland conference of 1966. His students included Don Nagle, Howard Long, and Steve Armstrong, among others. These disciples went on to open their own dojos throughout the land, and taught countless students the "One-Hearted Way." </P><BR/>
+                <P>Shimabuku died in 1975. His disciples carried Isshin-Ryu to subsequent generations, most notably in America, where it exploded in popularity. Masters and acolytes of Isshin-Ryu regularly make pilgrimages to Kinaka, Gushikawa, Okinawa, where Tatsuo is buried. </P><BR/>
+                <A href="index.html" class="btn">Archive Home</A>
+              </DIV>
+          </SECTION>
+
+          <SECTION id="card">
+            <DIV class="card-style">
+              <H2>Spirit Of Tatsuo</H2>
+              <P>2 Cranberry Square</P>
+              <P>Byram, NJ 07821</P>
+              <P><A href="mailto:pope.william382@student.ccm.edu">Email</A></P>
+              <P>(973) 349-6522</P>
+              <BR/>
+              <A href="about.html" class="btn">Learn More</A>
+            </DIV>
+            <IMG src="images/alt_logo.jpg" class="logo" alt="animated karate triskelion"/>  
+          </SECTION>
+
+          <FOOTER>
+              <!-- The span id "year" is associated with a JavaScript file (changeDate.js) which will force a copyright year change each January 1.  -->
+            <P>Copyright &#169; <SPAN id="year"></SPAN> Jack Pope</P>
+            <P><A href="mailto:pope.william382@student.ccm.edu">Email: Jack Pope</A></P>
+            <P id="disclaimer">Note: All media included in this project are used in the spirit of Fair Use or with relevant permissions. This is an educational project. Not intended for commercial use.  </P><BR/>
+            <ADDRESS>Image credits: Jason Briscoe/Unsplash; Thao Le Hoang/Unsplash; Archival images, Larry Harding.</ADDRESS>
+          </FOOTER>      
+          <SCRIPT src="scripts/dateChange.js"></SCRIPT>
+   </BODY>
+</HTML>
